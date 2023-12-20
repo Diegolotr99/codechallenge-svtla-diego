@@ -54,6 +54,17 @@ This Flutter project uses Clean Architecture and Flutter BLoC
       - use cases
     - This di is initialized in the main.dart main method.
 
+# How to build and run
+- If you need to generate the freezed entities you can use the command:
+  -  dart run build_runner build
+- Here’s how you can use the flutter tool to run the app:
+  - flutter run lib/main.dart
+
+- To run pub commands using the flutter tool:
+  - flutter pub get
+  - flutter pub outdated
+  - flutter pub upgrade
+  
 **Note:**
 First, I thank you for the opportunity to have a nice conversation in the interviews and the chance to make this code 
 challenge. I would like to also be transparent, I am currently on a trip through Europe with my family 
