@@ -1,4 +1,3 @@
-import 'package:code_challenge/core/di.dart';
 import 'package:code_challenge/features/team_member_list/presentation/bloc/team_member_bloc.dart';
 import 'package:code_challenge/features/team_member_list/presentation/widgets/team_member_list.dart';
 import 'package:flutter/material.dart';
@@ -11,10 +10,7 @@ class HomeTeamMembers extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<TeamMemberBloc, TeamMemberState>(
         builder: (context, state) {
-          print('state -> ');
-          print(state);
       if (state is TeamMembersInitial) {
-        print('ListInitial is!');
         context.read<TeamMemberBloc>().add(GetTeamMembers());
       }
       if (state is TeamMembersLoading) {
@@ -25,7 +21,6 @@ class HomeTeamMembers extends StatelessWidget {
         );
       }
       if (state is TeamMembersLoaded) {
-        print('TeamMembersLoaded -> ' + state.teamMembers.length.toString());
         return TeamMemberList(teamMembers: state.teamMembers);
       }
       if (state is TeamMembersEmpty) {

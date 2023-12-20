@@ -37,7 +37,6 @@ class TeamMemberBloc extends Bloc<TeamMemberEvent, TeamMemberState> {
     DeleteTeamMemberPressed event,
     Emitter<TeamMemberState> emit,
   ) async {
-    print('handleDeleteTeamMemberEvent');
     final currentList = (state as TeamMembersLoaded).teamMembers;
     final newList = List<TeamMember>.from(currentList)..removeWhere((element) => element.id == event.teamMemberId);
 
