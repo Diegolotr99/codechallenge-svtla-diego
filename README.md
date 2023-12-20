@@ -2,6 +2,12 @@
 
 A new Flutter project code challenge
 
+# demo
+
+https://github.com/Diegolotr99/codechallenge-svtla-diego/assets/14030614/d35374a1-3750-4db7-9316-5e7ed9edfab1
+
+
+
 ## Getting Started
 
 This Flutter project uses Clean Architecture and Flutter BLoC
@@ -48,7 +54,7 @@ This Flutter project uses Clean Architecture and Flutter BLoC
       - use cases
     - This di is initialized in the main.dart main method.
 
-Note:
+**Note:**
 First, I thank you for the opportunity to have a nice conversation in the interviews and the chance to make this code 
 challenge. I would like to also be transparent, I am currently on a trip through Europe with my family 
 (including grandpa and grandma that require some support) from December 13 to December 31st. 
